@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+.titulo{
+  font-size: 1em;
+  align-content: center;
+  text-align: center;
+}
+form{
+  margin:0;
+  font-family:sans-serif;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius:1em;
+  padding: 3.5em 1.5em;
+  width: 90%;
+}
+input{
+  font-family: inherit;
+  display: flex;
+  border-radius:1em;
+  display: flex;
+}
+div{
+  margin: auto;
+  display: flex;
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns:100%;
+}

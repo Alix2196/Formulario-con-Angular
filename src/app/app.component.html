@@ -1,0 +1,60 @@
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/imagenes/emoticon.jpg" alt="" width="150" height="100" class="d-inline-block align-text-top">
+      Angelica
+    </a>
+  </div>
+</nav>
+
+<div>
+  <div class="titulo">
+    <h1>Formulario de registro</h1>
+  </div>
+  <form (ngSubmit)="onRegister()" #myForm="ngForm">
+
+    <div class="container">
+      <div>
+        <div class="formilario">
+
+          <div class="input-group">
+            <label for="name"></label>
+            <input type="text" name="name" required id=" nombre" [(ngModel)]=" register.name" placeholder="nombre"
+              class="form-control" placeholder="Name" aria-label="name">
+          </div>
+
+          <div class="input-group">
+            <label for=""></label>
+            <input type="text" name="apellido" required placeholder="apellido"  id=" apellido" [(ngModel)]=" register.apellido"
+              class="form-control" placeholder="Apellido" aria-label="apellido">
+          </div>
+
+
+          <div class="input-group">
+            <label for=""></label>
+            <input type="text" name="email" required placeholder="email"  id=" email" [(ngModel)]=" register.email"
+              class="form-control" placeholder="Email" aria-label="email">
+          </div>
+
+          <div class="input-group">
+            <label for=""></label>
+            <input type="text" name="Password"required placeholder="Password"  id=" Password" [(ngModel)]=" register.password"
+              class="form-control" placeholder="Password" aria-label="password">
+          </div>
+        </div>
+
+        <div class="form-check mb-2 mr-sm-2">
+          <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+          <label class="form-check-label" for="inlineFormCheck">
+            Remember me
+          </label>
+        </div>
+
+        <div>
+          <button [disabled]="myForm.invalid" type="submit" class="btn btn-primary">Resgistar</button>
+          <button [disabled]="myForm.invalid" type="button" class="btn btn-primary">Accion</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
